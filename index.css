@@ -1,11 +1,14 @@
 *{
     padding: 0%;
     margin: 0%;
-    color: #FFF6F4;
+   
 }
 body{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container{
     width: 100%;
@@ -14,6 +17,7 @@ body{
     grid-template-rows: 10% 80%;
 }
 .navbar{
+    color: #FFF6F4;
     width: 100%;
     height: 100%;
     display: flex;
@@ -28,12 +32,13 @@ body{
     background-color: #FFF6F4;
    
 }
-.card{
+.cards{
     width: 100%;
     height: 100%;
     display: flex;
 }
 .addButton{
+    color: #FFF6F4;
     display: flex;
     justify-content: center;
     bottom: 2vh;
@@ -46,6 +51,7 @@ body{
     
 }
 .addButton button{
+    color: #FFF6F4;
     background-color: #FFA41B;
     opacity: 80%;
     display: flex;
@@ -62,4 +68,23 @@ body{
     background-color: #FFA41B;
     opacity: 100%;
 
+}
+#bookDial{
+    color: black;
+   width: 20vw;
+   height: 50vh;
+   margin: auto;
+}
+#bookDial form{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 2vh;
+}
+#bookDial form div{
+    display: flex;
+    flex-direction: column;
+}
+#bookDial form button{
+    width: 20%;
 }
