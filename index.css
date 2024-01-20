@@ -4,15 +4,16 @@
    
 }
 body{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: scroll;
 }
 .container{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-rows: 10% 80%;
 }
@@ -25,18 +26,27 @@ body{
     justify-content: center;
     background-color: #525FE1;
 }
-.content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFF6F4;
-   
-}
+
+
 .cards{
-    width: 100%;
-    height: 100%;
     display: flex;
+    flex-wrap:wrap;
+    overflow-x: hidden;
 }
+.card{
+    width:205Px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: flex-start;
+}
+.card img{
+    width: 170px;
+    height: auto;
+    
+}
+
 .addButton{
     color: #FFF6F4;
     display: flex;
@@ -87,4 +97,8 @@ body{
 }
 #bookDial form button{
     width: 35%;
+}
+.dialogBox{
+    width: 10%;
+    height:10%;
 }
