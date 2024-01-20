@@ -29,12 +29,14 @@ body{
 
 
 .cards{
-    display: flex;
-    flex-wrap:wrap;
-    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
 }
 .card{
-    width:205Px;
+    width:180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +55,7 @@ body{
     justify-content: center;
     bottom: 2vh;
     right:2vw;
-   position: absolute;
+   position: fixed;
     width: 12vmin;
     height: 12vmin;
     object-fit: cover;
@@ -102,3 +104,11 @@ body{
     width: 10%;
     height:10%;
 }
+@media (max-width: 600px) {
+    .cards {
+        display: flex;
+    flex-wrap:wrap;
+    overflow-x: hidden;/* Single-column layout for smaller screens */
+    }
+  }
+  
