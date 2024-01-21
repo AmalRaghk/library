@@ -26,11 +26,11 @@ function createCard(book) {
   card.setAttribute('id', `card${book.Id}`);
   card.innerHTML = `
     <div class="deck">
-    <div><img src="./img/book-multiple.svg"></div>
-      <div>${book.Title}</div>
-      <div>${book.Author}</div>
-      <div>${book.Pagenos}</div>
-      <div data-read-display>${book.Read}</div>  
+    <div><img src="./img/book.svg"></div>
+      <div class="title">${book.Title}</div>
+      <div class="author">${book.Author}</div>
+      <div classs="pageNo">${book.Pagenos}</div>
+      <div class="Read" data-read-display>${book.Read}</div>  
       <button id="deleteBtn">Delete</button>
       <button id="readBtn">Read</button>
     </div>

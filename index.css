@@ -10,6 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow-y: scroll;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .container{
     width: 100%;
@@ -29,19 +30,26 @@ body{
 
 
 .cards{
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
     gap: 20px;
-    justify-content: center;
-    justify-items: center;
+    justify-content:space-between;
+    justify-items:center;
 }
 .card{
-    width:180px;
+    border:dotted #525FE1;
+    border-radius: 14px;
+    margin-top: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width:190px;
+    height:320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-self: flex-start;
+    margin-bottom: 20px;
 }
 .card img{
     width: 170px;
@@ -86,12 +94,14 @@ body{
    width: 20vw;
    height: 50vh;
    margin: auto;
+   border-radius: 5%;
 }
 #bookDial form{
     display: flex;
     flex-direction: column;
     color: black;
     padding: 2vh;
+   
 }
 #bookDial form div{
     display: flex;
@@ -104,11 +114,73 @@ body{
     width: 10%;
     height:10%;
 }
+#deleteBtn{
+    width: 55px;
+    padding: 4px;
+    background-color: #FFA41B;
+    color: #FFF6F4;
+    border-radius: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#readBtn{
+    width: 55px;
+    padding: 4px;
+    background-color: #525FE1;
+    color: #FFF6F4;
+    border-radius: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+form button{
+    padding: 4px;
+    background-color: #FFA41B;  
+    
+    color: #FFF6F4;
+    border-radius: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+form input,select{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 14px;
+
+    padding: 8px;
+}
+#confirmBtn{
+    background-color: #525FE1;
+    margin-top: 5px;
+}
+.title{
+    font-weight: 750;
+    color: #525FE1;
+}
+.author{
+    font-weight: 600;
+}
+.pageNo{
+    font-weight: 4500;
+    
+}
+.read{
+    font-weight: 500;
+}
 @media (max-width: 600px) {
     .cards {
         display: flex;
     flex-wrap:wrap;
-    overflow-x: hidden;/* Single-column layout for smaller screens */
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    height: 100%;/* Single-column layout for smaller screens */
+    }
+    .card{
+        width: 180px;
+        height:300px;
+    }
+    #bookDial{
+        color: black;
+       width: 60vw;
+       height: 50vh;
+       margin: auto;
+       border-radius: 5%;
     }
   }
   
